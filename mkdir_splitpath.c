@@ -38,7 +38,7 @@ void mkdir(char pathName[]){
 
     if(exists == 0){
         n->parentPtr=parent;
-        n->siblingPt=NULL;
+        n->siblingPtr=NULL;
         strcpy(n->name, baseName);
         n->fileType='D';
         if(prevNode==parent){
