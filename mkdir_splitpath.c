@@ -11,7 +11,7 @@ void mkdir(char pathName[]){
     char baseName[100];
     char dirName[100];
     if(pathName == "/"){
-        printf(" % s\n","MKDIR ERROR: no path provided");
+        printf("%s\n","MKDIR ERROR: no path provided");
         return;
     }
 
@@ -47,10 +47,10 @@ void mkdir(char pathName[]){
         else{
             prevNode->siblingPtr=n;
         }
-        printf(" % s%s%s\n","MKDIR SUCCESS: node ",pathName," successfully created");
+        printf("%s%s%s\n","MKDIR SUCCESS: node ",pathName," successfully created");
     }
     else{
-        printf(" % s%s%s\n","MKDIR ERROR: directory ",baseName," already exists");
+        printf("%s%s%s\n","MKDIR ERROR: directory ",baseName," already exists");
     }
 
     return;
