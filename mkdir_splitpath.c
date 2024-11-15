@@ -47,7 +47,7 @@ void mkdir(char pathName[]){
         else{
             prevNode->siblingPtr=n;
         }
-        printf(" % s%s%s\n","MKDIR SUCCESS: node ",pathName," created");
+        printf(" % s%s%s\n","MKDIR SUCCESS: node ",pathName," successfully created");
     }
     else{
         printf(" % s%s%s\n","MKDIR ERROR: directory ",baseName," already exists");
