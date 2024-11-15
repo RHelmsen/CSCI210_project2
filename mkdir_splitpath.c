@@ -10,7 +10,7 @@ void mkdir(char pathName[]){
     int exists=0;
     char baseName[100];
     char dirName[100];
-    if(pathName == "/"){
+    if(strcmp(pathName,"/")==0){
         printf("%s\n","MKDIR ERROR: no path provided");
         return;
     }
