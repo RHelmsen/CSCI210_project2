@@ -27,7 +27,7 @@ void mkdir(char pathName[]){
     currNode = parent->childPtr;
     prevNode = parent;
     while(currNode!=NULL){
-        if(currNode->name==baseName){
+        if(strcmp(currNode->name,baseName)==0){
             exists=1;
             break;
         }
